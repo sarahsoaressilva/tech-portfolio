@@ -51,25 +51,48 @@
   
 /*SESSÃO HERO BANNER */
 
-.apresentacao {
-    text-align: center;
-}
-
-.image-container {
+.text-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-.grid-1 {
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    height: 100vh
+}
+
+.text {
+    animation: appearFromBottom 1s ease-in-out forwards;
+    transform: translateY(100%);
+} 
+
+@keyframes appearFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* GRID DE IMAGENS */
+
+.image-container {
+    padding-top: 40px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
     margin: 10px;
 }
 .grid-1 img {
     width: 100%;
     height: auto;
   }
-  
+
+.img-appear {
+    animation: appearFromBottom 1s ease-in-out forwards;
+    transform: translateY(100%);
+}
+

@@ -5,6 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'Keven Franco';
+  title = 'Tech Porfolio';
+  imgVisible = false;
+  
+
+  constructor() {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 50) {
+        this.imgVisible = true;
+      }
+    });
+  }
 }

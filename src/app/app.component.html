@@ -28,28 +28,20 @@
     <main>
 
       <section id="hero-banner">
-        <h2 class="apresentacao">Olá, eu sou o Keven Franco</h2>
+
+        <div class="text-container">
+          <h2 class="text"> Olá, eu sou o Keven 🙂 </h2>
+        </div>
+        
         
         <div class="image-container">
 
           <div class="grid-1">
-            <img src="../assets/image1.jpg" alt="AAAA">
-          </div>
-
-          <div class="grid-1">
-            <img src="../assets/image2.jpg" alt="AAAA">
-          </div>
-
-          <div class="grid-1">
-            <img src="../assets/image3.jpg" alt="AAAA">
-          </div>
-          
-          <div class="grid-1">
-            <img src="../assets/image4.jpg" alt="AAAA">
-          </div>
-          
-          <div class="grid-1">
-           <img src="../assets/image5.jpg" alt="AAAA">
+            <img [ngClass]="{'img-appear': imgVisible}" src="../assets/image1.jpg">
+            <img [ngClass]="{'img-appear': imgVisible}" src="../assets/image2.jpg">
+            <img [ngClass]="{'img-appear': imgVisible}" src="../assets/image3.jpg">
+            <img [ngClass]="{'img-appear': imgVisible}" src="../assets/image4.jpg">
+            <img [ngClass]="{'img-appear': imgVisible}" src="../assets/image5.jpg">
           </div>
 
         </div>
